@@ -1,0 +1,12 @@
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Data\obj\Debug\BookStore.Data.csprojResolveAssemblyReference.cache
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Data\bin\Debug\BookStore.Data.dll.config
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Data\bin\Debug\BookStore.Data.dll
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Data\bin\Debug\BookStore.Data.pdb
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Data\bin\Debug\BookStore.Domain.dll
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Data\bin\Debug\EntityFramework.dll
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Data\bin\Debug\BookStore.Domain.pdb
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Data\bin\Debug\EntityFramework.xml
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Data\obj\Debug\BookStore.Data.dll
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Data\obj\Debug\BookStore.Data.pdb

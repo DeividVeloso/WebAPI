@@ -1,0 +1,5 @@
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Utils\bin\Debug\BookStore.Utils.dll
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Utils\bin\Debug\BookStore.Utils.pdb
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Utils\obj\Debug\BookStore.Utils.csprojResolveAssemblyReference.cache
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Utils\obj\Debug\BookStore.Utils.dll
+C:\Users\deivi\Desktop\Estudos\IntroWebAPI\BookStore\src\BookStore.Utils\obj\Debug\BookStore.Utils.pdb
