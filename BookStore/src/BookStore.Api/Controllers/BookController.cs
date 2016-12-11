@@ -53,8 +53,10 @@ namespace BookStore.Api.Controllers
         #region Read
         [HttpGet]
        // [EnableCors(origins: "http://mywebclient.azurewebsites.net", headers: "*", methods: "*")]
-        [CacheOutput(ClientTimeSpan = 100, ServerTimeSpan = 100)]
+        //[CacheOutput(ClientTimeSpan = 100, ServerTimeSpan = 100)]
         //[DeflateCompression]
+
+        [BasicAuthenticationAttribute]
         [Route("livros")]
         public Task<HttpResponseMessage> Get()
         {
@@ -125,6 +127,77 @@ namespace BookStore.Api.Controllers
         }
         #endregion
 
+        #region Create
+        [HttpPost]
+        [Route("livros")]
+        public Task<HttpResponseMessage> Post(Book book)
+        {
+            HttpResponseMessage response = new HttpResponseMessage();
+
+            try
+            {
+                _repository.Create(book);
+                response = Request.CreateResponse(HttpStatusCode.Created, book);
+            }
+            catch (Exception)
+            {
+                response = Request.CreateResponse(HttpStatusCode.BadRequest, "Falha ao recuperar livros");
+                throw;
+            }
+
+            var tsc = new TaskCompletionSource<HttpResponseMessage>();
+            tsc.SetResult(response);
+            return tsc.Task;
+        }
+        #endregion
+
+        #region Update
+        [HttpPut]
+        [Route("livros")]
+        public Task<HttpResponseMessage> Put(Book book)
+        {
+            HttpResponseMessage response = new HttpResponseMessage();
+
+            try
+            {
+                _repository.Update(book);
+                response = Request.CreateResponse(HttpStatusCode.OK, book);
+            }
+            catch (Exception)
+            {
+                response = Request.CreateResponse(HttpStatusCode.BadRequest, "Falha ao recuperar livros");
+                throw;
+            }
+
+            var tsc = new TaskCompletionSource<HttpResponseMessage>();
+            tsc.SetResult(response);
+            return tsc.Task;
+        }
+        #endregion
+
+        #region Delete
+        [HttpDelete]
+        [Route("livros/{id}")]
+        public Task<HttpResponseMessage> Delete(int id)
+        {
+            HttpResponseMessage response = new HttpResponseMessage();
+
+            try
+            {
+                _repository.Delete(id);
+                response = Request.CreateResponse(HttpStatusCode.OK, "Livro removido com sucesso!");
+            }
+            catch (Exception)
+            {
+                response = Request.CreateResponse(HttpStatusCode.BadRequest, "Falha ao recuperar livros");
+                throw;
+            }
+
+            var tsc = new TaskCompletionSource<HttpResponseMessage>();
+            tsc.SetResult(response);
+            return tsc.Task;
+        }
+        #endregion
 
         protected override void Dispose(bool disposing)
         {
